@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка файла</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container col-12 index">
+        <h1>Загрузите текстовый файл</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="form">
+            <div class="row form__reg">
+                <input type="file" name="file" accept=".txt" required>
+            </div>
+            <div class="col-12 submit_btn">
+                <button type="submit" id="myButton">Загрузить</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
